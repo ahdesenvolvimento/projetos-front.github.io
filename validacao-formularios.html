@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Validação de formulários</title>
+        <link rel="stylesheet" href="css/estilo_validacao.css">
+        <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+    </head>
+    <body>
+        <script>
+            window.onload = function(){
+                const tamanho = $('.menu').height();
+                document.body.onresize = function(){
+                    if (document.body.clientWidth < 500){
+                        
+
+                    }else{
+                    
+                        $('.menu').css('height', tamanho + '%');
+                    }
+                }
+            }
+            
+        </script>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="calculadora.html">Calculadora</a>
+                </li>
+                <li>
+                    <a href="contador.html">Contador</a>
+                </li>
+                <li>
+                    <a href="jogo-da-velha.html">Jogo da velha</a>
+                </li>
+                <li>
+                    <a href="calculadora-imc.html">Calculadora de IMC</a>
+                </li>
+                <li>
+                    <a href="cronometro.html">Cronômetro</a>
+                </li>
+            </ul>
+        </div>
+        <div class="container-fluid">
+            <div class="row tamanho">
+                <div class="col-12 ajustar">
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="">CPF</label>
+                        </div>
+                        <div class="col-12">
+                            <input type="text" name="cpf" id="cpf" maxlength="11" onkeypress="validacao_cpf_com_mensagem(true, 'Apenas números134124');" autocomplete="off">
+                            
+                        </div>
+                        <div class="col-12">
+                            <small><span id="cpf_message"></span></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 ajustar">
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="">Nome completo</label>
+                        </div>
+                        <div class="col-12">
+                            <input type="text" name="nome" id="nome" maxlength="64" onkeypress="validacao_nome_com_mensagem(true, 'Apenas números134124');" autocomplete="off">
+                        </div>
+                        <div class="col-12">
+                            <span id="nome_message"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 ajustar">
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="">RG</label>
+                        </div>
+                        <div class="col-12">
+                            <input type="text" name="rg" id="rg" maxlength="8" onkeypress="validacao_rg_com_mensagem(true, 'htmmm');" autocomplete="off">
+                        </div>
+                        <div class="col-12">
+                            <span id="rg_message"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 ajustar">
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="">Telefone</label>
+                        </div>
+                        <div class="col-12">
+                            <input type="tel" name="telefone" id="telefone" maxlength="11" onkeypress="validacao_telefone_com_mensagem(true, 'rpz12312');">
+                        </div>
+                        <div class="col-12">
+                            <span id="telefone_message"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 ajustar">
+                    <label for="">E-mail</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="col-12 ajustar">
+                    <label for="">Gmail</label>
+                    <input type="email" name="gmail" id="gmail">
+                </div>
+                <div class="col-12 ajustar">
+                    <label for="">Senha</label>
+                    <input type="password" name="senha" id="senha">
+                </div>
+            </div>
+        </div>
+        
+        <script src="js/validacoes_de_form.js"></script>
+        <script src="js/jquery.js"></script>
+        <script scr="css/bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    position: relative;
+    background-color: #f1f1f1;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container-fluid{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: white;
+    width: 50%;
+    height: 50%;
+}
+
+.container-fluid h3 {
+    margin: 4% 0 4% 0;
+    text-align: center;
+}
+
+form{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: 3% 0 3% 0;
+    transform: translateX(-50%) translateY(-50%);
+    width: 50%;
+    
+}
+
+.flutuar{
+    margin: 15% 0 5% 0;
+}
+
+.flutuar button{
+    margin: auto;
+    display: block;
+   
+    background-color: #f1f1f1;
+    width: 100%;
+}
+
+button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button:hover{
+    color: brown;
+    filter: contrast(80%);
+}

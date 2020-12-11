@@ -1,0 +1,22 @@
+li{
+    display: inline-block;
+    list-style: none;
+    width: 200px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+li a{
+    width: 200px;
+}
+.header{
+    text-align: center;
+    background-color: lightblue;
+}
+
+.footer{
+    position: absolute;
+    text-align: center;
+    background-color: lightblue;
+    bottom: 0;
+    width: 100%;
+}

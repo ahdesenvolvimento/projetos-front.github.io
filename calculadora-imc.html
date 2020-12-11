@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora de IMC</title>
+        <link rel="stylesheet" href="css/estilo_calculadora_imc.css">
+        <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <a href="calculadora.html">Calculadora</a>
+                            </li>
+                            <li>
+                                <a href="contador.html">Contador</a>
+                            </li>
+                            <li>
+                                <a href="jogo-da-velha.html">Jogo da velha</a>
+                            </li>
+                            <li>
+                                <a href="validacao-formularios.html">Formulários validados</a>
+                            </li>
+                            <li>
+                                <a href="cronometro.html">Cronômetro</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-9 col-md-9 col-lg-12">
+                    <div class="conteudo">
+                        <div>
+                            <div class="col-12">
+                                <h3>Como é calculado o IMC</h3>
+                                <p>O cálculo do IMC é feito dividindo o peso pela altura ao quadrado</p>
+                            </div>
+                            <div class="col-12">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <label for="peso">Peso:</label>
+                                                </div>
+                                                <div class="col-12">
+                                                    <input type="number" name="peso" id="peso" placeholder="Ex:55kg, 55,1kg">        
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="altura">Altura:</label>
+                                                </div>
+                                                <div class="col-12">
+                                                    <input type="number" name="altura" id="altura" placeholder=Ex:1,85m>
+                                                </div>
+                                                <div class="col-12">
+                                                    <button type="button" id="calcular">Calcular</button>
+                                                </div>
+                                            </div> 
+                                        </div>      
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 border border-dark">
+                                            <h4 id="resultado"></h4>
+                                            <p id="significado"></p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer fixed-bottom">
+                <small>
+                    <span>Desenvolvido por Antônio Henrique</span>
+                </small>
+            </div>
+        </div>
+        
+        
+        <script src="js/funcoes_calculadora_imc.js"></script>
+        <script src="js/jquery.js"></script>
+        <script scr="css/bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>

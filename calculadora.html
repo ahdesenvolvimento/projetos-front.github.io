@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container-fluid border">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <h3>Calculadora</h3>
+        </div>
+        <div class="col-12">
+            <form action="">
+                <input type="text" id="entrada" class="form-control border rounded">
+
+            </form>
+        </div>
+        <div class="row flutuar">
+            <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                <button value="1" class="border rounded" onclick="pegar_valor(value)">1</button>
+            </div>
+            <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                <button value="2" class="border rounded" onclick="pegar_valor(value)">2</button>
+            </div>
+            <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                <button value="3" class="border rounded" onclick="pegar_valor(value)">3</button>
+            </div>
+            <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                <button value="4" class="border rounded" onclick="pegar_valor(value)">4</button>
+            </div>
+            <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                <button value="5" class="border rounded" onclick="pegar_valor(value)">5</button>
+            </div>
+            <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                <button value="6" class="border rounded" onclick="pegar_valor(value)">6</button>
+            </div>
+            <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                <button value="7" class="border rounded" onclick="pegar_valor(value)">7</button>
+            </div>
+            <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                <button value="8" class="border rounded" onclick="pegar_valor(value)">8</button>
+            </div>
+            <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                <button value="9" class="border rounded" onclick="pegar_valor(value)">9</button>
+            </div>
+            <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                <button value="0" class="border rounded" onclick="pegar_valor(value)">0</button>
+            </div>
+            <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                <button value="*" class="border rounded" onclick="pegar_valor(value)">*</button>
+            </div>
+            <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                <button value="/" class="border rounded" onclick="pegar_valor(value)">/</button>
+            </div>
+            <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                <button value="+" class="border rounded" onclick="pegar_valor(value)">+</button>
+            </div>
+            <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                <button value="-" class="border rounded" onclick="pegar_valor(value)">-</button>
+            </div>
+            <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                <button value="C" class="border rounded" onclick="pegar_valor(value)">C</button>
+            </div>
+            <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                <button id="resultado" class="border rounded">=</button>
+            </div>
+        </div>
+       
+    </div>
+
+    
+<script src="js/funcoes.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+</body>
+</html>

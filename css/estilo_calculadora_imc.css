@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    position: relative;
+    height: 100%;
+}
+
+.menu{
+    background-color: linen;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 10% 0 0 10%;
+    letter-spacing: 0.1em;
+    line-height: 300%;
+    font-family: serif;
+}
+
+li{
+    list-style: none;
+}
+
+li a {
+    background-color: black;
+    color: white;
+    padding: 10px 0 10px 0;
+    margin: 10px;
+    border-radius: 10px;
+    width: 75%;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+
+}
+
+li a:hover{
+    text-decoration: none;
+    color: white;
+    filter: brightness(30%);
+}
+.container-fluid{
+ 
+    min-height: 100%;
+}
+
+.conteudo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    position: absolute;
+    padding: 2% 2% 2% 2%;
+    left: 50%;
+    transform: translateX(-25%);
+    margin-top: 100px;
+    text-align: left;
+}
+
+input{
+    width: 150px;
+    border-radius: 10px;
+    background-color: ivory;
+}
+
+#calcular{
+    margin: 5% 0 0 0;
+    background-color: darkcyan;
+    color: white;
+    width: 30%;
+}
+
+.border{
+    margin-top: 5%;
+}
+
+.footer{
+    background-color: seashell;
+    text-align: center;
+}
